@@ -2,9 +2,8 @@ class RecipeFacade
   def self.recipes(country)
     response = RecipeService.recipes(country)
 
-    require 'pry'; binding.pry
-    response[:hits].each do |recipe_data|
-      Recipe.new(recipe_data) 
+    response[:hits].map do |recipe_data|
+      Recipe.new(recipe_data[:recipe], country) 
     end
   end
 end

@@ -3,9 +3,10 @@ module Api
     class RecipesController < ApplicationController
       def index
         if params[:country] == ''
+          render json: { data: [] }
         else
           recipes = RecipeFacade.recipes(params[:country]) 
-          @recipes = RecipeSerializer.new(recipes) 
+          render json: RecipeSerializer.new(recipes) 
         end
       end
     end
