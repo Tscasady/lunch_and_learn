@@ -21,13 +21,12 @@ RSpec.describe 'The recipe request', type: :request do
       end
     end
 
-    xit 'can provide recipes from a random country if no country is given' do
+    it 'can provide recipes from a random country if no country is given' do
       get '/api/v1/recipes'
       expect(response).to be_successful
 
       recipes = JSON.parse(response.body, symbolize_names: true)[:data]
       
-      require 'pry'; binding.pry
       expect(recipes).to be_a Array
       recipes.each do |recipe| 
         expect(recipe[:id]).to eq nil

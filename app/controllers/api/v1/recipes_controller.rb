@@ -5,9 +5,15 @@ module Api
         if params[:country] == ''
           render json: { data: [] }
         else
-          recipes = RecipeFacade.recipes(params[:country]) 
+          recipes = RecipeFacade.recipes(country) 
           render json: RecipeSerializer.new(recipes) 
         end
+      end
+
+      private 
+
+      def country
+        GuaranteedCountry.fetch(params[:country])
       end
     end
   end
