@@ -20,17 +20,8 @@ RSpec.describe 'The tourist sights request', type: :request do
       end
     end
 
-    xit 'can return an empty array if no country is provided' do
+    it 'can return an empty array if no country is provided' do
       get '/api/v1/tourist_sights?'
-      expect(response).to be_successful
-
-      tourist_sights = JSON.parse(response.body, symbolize_names: true)[:data]
-
-      expect(tourist_sights).to eq []
-    end
-    
-    xit 'can return an empty array if no tourist_sights are found' do
-      get '/api/v1/tourist_sights?country=notacountry'
       expect(response).to be_successful
 
       tourist_sights = JSON.parse(response.body, symbolize_names: true)[:data]
