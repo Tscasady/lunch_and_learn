@@ -15,8 +15,8 @@ RSpec.describe 'The learning resources request', type: :request do
       expect(learning_resource[:attributes]).to be_a Hash
       expect(learning_resource[:attributes][:country]).to be_a String
       expect(learning_resource[:attributes][:video]).to be_a Hash
-      expect(learning_resource[:attributes][:video]).to be_a Hash
-      expect(learning_resource[:attributes][:video]).to be_a Hash
+      expect(learning_resource[:attributes][:video][:title]).to be_a String
+      expect(learning_resource[:attributes][:video][:youtube_video_id]).to be_a String
       expect(learning_resource[:attributes][:images]).to be_a Array
       expect(learning_resource[:attributes][:images][0]).to be_a Hash
       expect(learning_resource[:attributes][:images][0][:alt_tag]).to be_a String
@@ -24,21 +24,21 @@ RSpec.describe 'The learning resources request', type: :request do
     end
 
     it 'can return an empty hash for the video field if no video is found' do
-      get '/api/v1/recipes?country=notcountry'
+      get '/api/v1/learning_resources?country=notcountry'
       expect(response).to be_successful
 
-      recipes = JSON.parse(response.body, symbolize_names: true)[:data]
+      learning_resource = JSON.parse(response.body, symbolize_names: true)[:data]
 
-      expect(recipes).to eq []
+      expect(learning_resource[:attributes][:video]).to eq({})
     end
 
     it 'can return an empty array for the images field if no images are found' do
-      get '/api/v1/recipes?country='
+      get '/api/v1/recipes?country=notcountry'
       expect(response).to be_successful
 
-      recipes = JSON.parse(response.body, symbolize_names: true)[:data]
+      learning_resource = JSON.parse(response.body, symbolize_names: true)[:data]
 
-      expect(recipes).to eq []
+      expect(learning_resource[:attributes][:images]).to eq []
     end
   end
 end
