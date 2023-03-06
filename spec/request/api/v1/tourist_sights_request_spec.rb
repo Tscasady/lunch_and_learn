@@ -21,22 +21,13 @@ RSpec.describe 'The tourist sights request', type: :request do
     end
 
     it 'can return an empty array if no tourist_sights are found' do
-      get '/api/v1/tourist_sights?country=France'
+      get '/api/v1/tourist_sights?country=notacountry'
       expect(response).to be_successful
 
       tourist_sights = JSON.parse(response.body, symbolize_names: true)[:data]
 
       expect(tourist_sights).to eq []
     end
-
-    # it 'can return an empty array if country param is an empty string' do
-    #   get '/api/v1/recipes?country='
-    #   expect(response).to be_successful
-    #
-    #   recipes = JSON.parse(response.body, symbolize_names: true)[:data]
-    #
-    #   expect(recipes).to eq []
-    # end
   end
 end
 
