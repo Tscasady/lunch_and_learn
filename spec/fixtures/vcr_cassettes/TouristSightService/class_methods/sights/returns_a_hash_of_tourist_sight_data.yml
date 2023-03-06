@@ -1,0 +1,262 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.geoapify.com/v2/places?apiKey=e9565e4305f24b839df06e4013b6710f&categories=tourism.sights&filter=circle:18.4,43.8,20000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Mar 2023 17:57:25 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-iplatitude, cf-iplongitude,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=aO5llIOAOGh9%2FeFO0qqYWNDeW1Ycka3C1gSzJKajQemPTCFWxbn%2BAnml7AFVwcgVbj06sv24VezhLTf%2FrNPIAikzGdOdMZSol8BbDZmxnamxJUW9BUaTY%2BCCbfwvK%2FoGdRs%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a3c7b168d23638d-ORD
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"Miljački
+        grad","country":"Bosnia and Herzegovina","country_code":"ba","state":"Republika
+        Srpska","county":"City of Istočno Sarajevo","city":"MZ Bulozi","municipality":"Istočni
+        Stari Grad Municipality","postcode":"71444","district":"Bulozi","street":"Donji
+        Bulozi","lon":18.4980814,"lat":43.835596,"state_code":"SRP","formatted":"Miljački
+        grad, Donji Bulozi, 71444 MZ Bulozi, Bosnia and Herzegovina","address_line1":"Miljački
+        grad","address_line2":"Donji Bulozi, 71444 MZ Bulozi, Bosnia and Herzegovina","categories":["tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Miljački
+        grad","image":"https://www.palelive.com/images/stories/razno/Stari%20grad/stari_grad.jpg","osm_id":7787331862,"name:sr":"Миљацки
+        град","website":"https://www.palelive.com/stari-grad-na-sastavcima-paljanske-i-mokranjske-miljacke/","historic":"castle","osm_type":"n","wikidata":"Q12759650","wikipedia":"sr:Миљацки
+        град","castle_type":"fortress"}},"place_id":"51f3be3b43827f324059f87c4bcff4ea4540f00103f901164129d00100000092030e4d696c6a61c48d6b692067726164"},"geometry":{"type":"Point","coordinates":[18.4980814,43.83559600053735]}},{"type":"Feature","properties":{"name":"Gazi
+        Husrev-begov bezistan","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","suburb":"Baščaršija","street":"Čurčiluk veliki","lon":18.428077101400042,"lat":43.858758699999996,"formatted":"Gazi
+        Husrev Bey''s Bezistan, Čurčiluk veliki, 71200 City of Sarajevo, Bosnia and
+        Herzegovina","address_line1":"Gazi Husrev Bey''s Bezistan","address_line2":"Čurčiluk
+        veliki, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.commercial","building.historic","commercial.marketplace","tourism","tourism.sights"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Gazi
+        Husrev-begov bezistan","osm_id":188836329,"amenity":"marketplace","name:bs":"Gazi
+        Husrev-begov bezistan","name:en":"Gazi Husrev Bey''s Bezistan","name:tr":"Gazi
+        Hüsrev Bey''in Bezistan''ı","building":"yes","historic":"yes","osm_type":"w","wikidata":"Q1566076","opening_hours":"Mo-Fr
+        08:00-20:00; Sa-Su 09:00-14:00"}},"place_id":"517f30d2f0956d3240591103dfdeeded4540f00102f901e969410b0000000092031a47617a69204875737265762d6265676f762062657a697374616e"},"geometry":{"type":"Point","coordinates":[18.4280691636236,43.85882173432595]}},{"type":"Feature","properties":{"name":"Aškenaška
+        sinagoga","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71000","district":"Stari
+        Grad Municipality","suburb":"MZ \"Mjedenica\"","street":"Hamdije Kreševljakovića","lon":18.425080632670824,"lat":43.8563105,"formatted":"Ashkenazi
+        Synagogue, Hamdije Kreševljakovića, 71000 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Ashkenazi
+        Synagogue","address_line2":"Hamdije Kreševljakovića, 71000 City of Sarajevo,
+        Bosnia and Herzegovina","categories":["building","building.historic","building.place_of_worship","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.synagogue","wheelchair","wheelchair.limited"],"details":["details","details.facilities","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Aškenaška
+        sinagoga","osm_id":190122879,"amenity":"place_of_worship","name:bs":"Aškenaška
+        sinagoga","name:de":"Synagoge","name:en":"Ashkenazi Synagogue","name:pl":"Synagoga
+        w Sarajewie","name:tr":"Aşkenaz Sinagogu","tourism":"attraction","building":"synagogue","historic":"yes","osm_type":"w","religion":"jewish","wikidata":"Q1268899","addr:city":"Sarajevo","wikipedia":"de:Synagoge
+        (Sarajevo)","wheelchair":"limited","addr:street":"Hamdije Kreševljakovića","denomination":"ashkenazi_orthodox","wikipedia:en":"Sarajevo
+        Synagogue","addr:postcode":71000,"opening_hours":"Mo-Fr 10:00-14:00"}},"place_id":"518474d82fd26c324059d346d7a29bed4540f00102f9017f0b550b0000000092031441c5a16b656e61c5a16b612073696e61676f6761"},"geometry":{"type":"Point","coordinates":[18.42508219751882,43.85631213676029]}},{"type":"Feature","properties":{"name":"Katedrala
+        Srca Isusova","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71000","district":"Stari
+        Grad Municipality","suburb":"Baščaršija","street":"Trg Fra Grge Martića","lon":18.425363070006362,"lat":43.859430399999994,"formatted":"Sacred
+        Heart Cathedral, Trg Fra Grge Martića, 71000 City of Sarajevo, Bosnia and
+        Herzegovina","address_line1":"Sacred Heart Cathedral","address_line2":"Trg
+        Fra Grge Martića, 71000 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.historic","building.place_of_worship","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.cathedral"],"details":["details","details.building","details.facilities","details.historic","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Katedrala
+        Srca Isusova","osm_id":474428386,"amenity":"place_of_worship","name:ar":"كاتدرائية
+        قلب يسوع","name:az":"Müqəddəs İsa Qəlbi Katedralı","name:be":"Сабор Найсвяцейшага
+        Сэрца Ісуса","name:bs":"Katedrala Srca Isusova","name:cs":"Katedrála Srdce
+        Ježíšova","name:de":"Herz-Jesu-Kathedrale","name:en":"Sacred Heart Cathedral","name:es":"Catedral
+        del Corazón de Jesús","name:fr":"Cathédrale du Cœur-de-Jésus","name:hr":"Katedrala
+        Srca Isusova","name:id":"Katedral Hati Kudus","name:it":"Cattedrale del Sacro
+        Cuore","name:ja":"イエスの聖心大聖堂","name:ka":"იესოს წმინდა გულის საკათედრო ტაძარი","name:la":"Ecclesia
+        Cathedralis Cordis Sancti","name:mk":"Црква на Исусовото срце","name:nl":"Heilig
+        Hartkathedraal","name:pl":"Katedra Serca Jezusowego","name:ru":"Собор Святейшего
+        Сердца Иисуса","name:sk":"Katedrála Najsvätejšieho Srdca Ježišovho","name:sr":"Katedrala
+        Srca Isusova","name:tr":"Kutsal Kalp Katedrali","name:zh":"聖心主教座堂","tourism":"attraction","website":"http://katedrala-sarajevo.com","building":"cathedral","historic":"yes","name:arz":"كاتدرائيه
+        قلب يسوع","osm_type":"w","religion":"christian","wikidata":"Q1267112","addr:city":"Sarajevo","wikipedia":"bs:Katedrala
+        Srca Isusova","start_date":1884,"wheelchair":"no","addr:street":"Trg fra Grge
+        Martića","denomination":"roman_catholic","addr:postcode":71000,"building:material":"stone","architect:wikidata":"Q3513882"}},"place_id":"51e85536cce46c324059eac6615b01ee4540f00102f901e233471c000000009203164b6174656472616c61205372636120497375736f7661"},"geometry":{"type":"Point","coordinates":[18.42536617590477,43.85941641115444]}},{"type":"Feature","properties":{"name":"Žuta
+        tabija","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","suburb":"MZ \"Vratnik\"","quarter":"Walled city of Vratnik","street":"Jekovac","lon":18.43772365824143,"lat":43.86145795,"formatted":"Žuta
+        tabija, Jekovac, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Žuta
+        tabija","address_line2":"Jekovac, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["tourism","tourism.attraction","tourism.attraction.viewpoint","tourism.sights","tourism.sights.castle"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Žuta
+        tabija","osm_id":-12252889,"name:bs":"Žuta tabija","name:hr":"Žuta tabija","name:pl":"Żółta
+        twierdza","name:sr":"Жута табија","tourism":"viewpoint","historic":"castle","osm_type":"r","wikidata":"Q8502697","wikipedia":"en:Žuta
+        Tabija","name:sr-Latn":"Žuta tabija"}},"place_id":"51fd3c4e2c0d70324059e09742dc43ee4540f00101f901d9f6ba000000000092030cc5bd75746120746162696a61"},"geometry":{"type":"Point","coordinates":[18.43770100507844,43.86144593478798]}},{"type":"Feature","properties":{"name":"Bijela
+        tabija","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","suburb":"MZ \"Vratnik\"","quarter":"Walled city of Vratnik","street":"Poddžebhana","lon":18.444496291964878,"lat":43.8593641,"formatted":"Bijela
+        tabija, Poddžebhana, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Bijela
+        tabija","address_line2":"Poddžebhana, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.castle"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Bijela
+        tabija","ruins":"yes","osm_id":-12252888,"name:bs":"Bijela tabija","name:hr":"Bijela
+        tabija","name:pl":"Biała twierdza","name:sr":"Бијела табија","name:tr":"Beyaz
+        Kale","name:zh":"白堡","tourism":"attraction","building":"castle","historic":"castle","osm_type":"r","wikidata":"Q1269707","wikipedia":"bs:Bijela
+        tabija","name:sr-Latn":"Bijela tabija"}},"place_id":"51594b2557cc713240596c2278be00ee4540f00101f901d8f6ba000000000092030d42696a656c6120746162696a61"},"geometry":{"type":"Point","coordinates":[18.444524237256108,43.85939770570698]}},{"type":"Feature","properties":{"name":"Stari
+        grad Vratnik","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","district":"Stari
+        Grad Municipality","suburb":"MZ \"Vratnik\"","quarter":"Walled city of Vratnik","lon":18.441290705076728,"lat":43.863077950000005,"formatted":"Walled
+        city of Vratnik, MZ \"Vratnik\", City of Sarajevo, Sarajevo Canton, Bosnia
+        and Herzegovina","address_line1":"Walled city of Vratnik","address_line2":"MZ
+        \"Vratnik\", City of Sarajevo, Sarajevo Canton, Bosnia and Herzegovina","categories":["populated_place","populated_place.quarter","tourism","tourism.sights"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Stari
+        grad Vratnik","place":"quarter","osm_id":-11741687,"name:en":"Walled city
+        of Vratnik","name:hr":"Stari grad Vratnik","name:sr":"Стари град Вратник","historic":"yes","osm_type":"r","wikidata":"Q43958640","name:sr-Latn":"Stari
+        grad Vratnik"}},"place_id":"519d6f787e2b71324059a5a8f1a778ee4540f00101f901f729b300000000009203125374617269206772616420567261746e696b"},"geometry":{"type":"Point","coordinates":[18.442069916156118,43.86305712985749]}},{"type":"Feature","properties":{"name":"Bistrik
+        Kula","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71144","district":"Stari
+        Grad Municipality","suburb":"Širokača","street":"Old Bobsleigh track","lon":18.438118753677927,"lat":43.84218715,"formatted":"Bistrik
+        Kula, Old Bobsleigh track, 71144 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Bistrik
+        Kula","address_line2":"Old Bobsleigh track, 71144 City of Sarajevo, Bosnia
+        and Herzegovina","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Bistrik
+        Kula","osm_id":-5926964,"building":"yes","historic":"castle","osm_type":"r","wikidata":"Q21734898","wikipedia":"sv:Bistrik
+        Kula","wikipedia:de":"Bistrik Kula"}},"place_id":"51a3e230182770324059e0719b49ceeb4540f00101f90134705a000000000092030c4269737472696b204b756c61"},"geometry":{"type":"Point","coordinates":[18.438096534666908,43.842232895756524]}},{"type":"Feature","properties":{"country":"Bosnia
+        and Herzegovina","country_code":"ba","state":"Federation of Bosnia and Herzegovina","county":"Sarajevo
+        Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari Grad
+        Municipality","suburb":"MZ \"Babića bašča\"","street":"Kozija ćuprija","lon":18.4571211,"lat":43.8534708,"formatted":"Kozija
+        ćuprija, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Kozija
+        ćuprija","address_line2":"71200 City of Sarajevo, Bosnia and Herzegovina","name":"Kozija
+        ćuprija","categories":["highway","highway.public","tourism","tourism.sights","tourism.sights.bridge"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"foot":"yes","name":"Kozija
+        ćuprija","layer":1,"bridge":"yes","osm_id":10214404,"bicycle":"yes","highway":"unclassified","surface":"paving_stones","z_order":330,"historic":"yes","osm_type":"w","wikidata":"Q198758","wikipedia":"bs:Kozija
+        ćuprija","motor_vehicle":"no"}},"place_id":"51da68a5b50e7532405962af7cd143ed4540f00102f90104dc9b000000000092030f4b6f7a696a6120c487757072696a61"},"geometry":{"type":"Point","coordinates":[18.457255699999997,43.85363215053691]}},{"type":"Feature","properties":{"name":"Spomen
+        park Vraca","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71000","district":"Novo
+        Sarajevo Municipality","neighbourhood":"Miljevići","suburb":"Vraca","street":"Husinjska","lon":18.39784283620459,"lat":43.843487800000005,"formatted":"Vraca
+        Memorial Park, Husinjska, 71000 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Vraca
+        Memorial Park","address_line2":"Husinjska, 71000 City of Sarajevo, Bosnia
+        and Herzegovina","categories":["natural","natural.forest","tourism","tourism.sights"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Spomen
+        park Vraca","osm_id":23697320,"landuse":"forest","name:de":"Ehrenmal von Vraca","name:en":"Vraca
+        Memorial Park","name:fr":"Parc commémoratif de Vraca","name:nl":"Herdenkingspark
+        van Vraca","historic":"memorial_site","osm_type":"w","wikidata":"Q1278015","wikipedia":"en:Vraca
+        Memorial Park"}},"place_id":"5101adf89eec65324059769b36e5f6eb4540f00102f901a89769010000000092031153706f6d656e207061726b205672616361"},"geometry":{"type":"Point","coordinates":[18.39814179965197,43.84347214857455]}},{"type":"Feature","properties":{"name":"Jevrejsko
+        groblje","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71000","district":"Centar
+        Municipality","suburb":"Marijin Dvor","street":"Put Mladih Muslimana","lon":18.407891832634373,"lat":43.84984625,"formatted":"Jewish
+        Cemetery, Put Mladih Muslimana, 71000 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Jewish
+        Cemetery","address_line2":"Put Mladih Muslimana, 71000 City of Sarajevo, Bosnia
+        and Herzegovina","categories":["tourism","tourism.sights"],"details":["details","details.historic","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Jevrejsko
+        groblje","osm_id":23711308,"landuse":"cemetery","name:de":"Jüdischer Friedhof","name:en":"Jewish
+        Cemetery","name:pl":"Cmentarz żydowski w Sarajewie","historic":"cemetery","osm_type":"w","religion":"jewish","wikidata":"Q1568852","wikipedia":"bs:Jevrejsko
+        groblje u Sarajevu","start_date":1630,"denomination":"orthodox","addr:postcode":71000}},"place_id":"5163bd68f77168324059ffcb650cc8ec4540f00102f9014cce6901000000009203114a657672656a736b6f2067726f626c6a65"},"geometry":{"type":"Point","coordinates":[18.407988989897955,43.84985499353933]}},{"type":"Feature","properties":{"name":"Jajce-kasarna","country":"Bosnia
+        and Herzegovina","country_code":"ba","state":"Federation of Bosnia and Herzegovina","county":"Sarajevo
+        Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari Grad
+        Municipality","suburb":"MZ \"Vratnik\"","quarter":"Walled city of Vratnik","street":"Bijela
+        česma","lon":18.440023765856957,"lat":43.86088505,"formatted":"Jajce-kasarna,
+        Bijela česma, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Jajce-kasarna","address_line2":"Bijela
+        česma, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.historic","no_access","tourism","tourism.sights","tourism.sights.ruines"],"details":["details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Jajce-kasarna","ruins":"barrack","access":"no","osm_id":23723006,"building":"yes","historic":"ruins","osm_type":"w","wikidata":"Q1564374","historic:civilization":"modern"}},"place_id":"5193da59aa9070324059e375809030ee4540f00102f901fefb69010000000092030d4a616a63652d6b617361726e61"},"geometry":{"type":"Point","coordinates":[18.43970741933533,43.860857069706775]}},{"type":"Feature","properties":{"name":"Vijećnica","country":"Bosnia
+        and Herzegovina","country_code":"ba","state":"Federation of Bosnia and Herzegovina","county":"Sarajevo
+        Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari Grad
+        Municipality","suburb":"Baščaršija","street":"Brodac","lon":18.43334677255322,"lat":43.8591665,"formatted":"City
+        Hall, Brodac, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"City
+        Hall","address_line2":"Brodac, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.building","details.facilities","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Vijećnica","height":20,"osm_id":23723663,"name:bs":"Vijećnica","name:en":"City
+        Hall","name:hr":"Vijećnica","building":"yes","historic":"monument","osm_type":"w","wikidata":"Q16831150","wikipedia":"bs:Sarajevska
+        vijećnica","wheelchair":"no","building:colour":"#f0d7b0","building:levels":4,"amenity:1896-1949":"townhall","amenity:1949-1992":"library"}},"place_id":"510c9dc2c3ee6e324059226308f4f7ed4540f00102f9018ffe69010000000092030a56696a65c4876e696361"},"geometry":{"type":"Point","coordinates":[18.433330760014584,43.85912943276914]}},{"type":"Feature","properties":{"name":"Kula
+        Širokac","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","suburb":"MZ \"Vratnik\"","quarter":"Walled city of Vratnik","street":"Vratnik
+        mejdan","lon":18.43706075032879,"lat":43.862332699999996,"formatted":"Kula
+        Širokac, Vratnik mejdan, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Kula
+        Širokac","address_line2":"Vratnik mejdan, 71200 City of Sarajevo, Bosnia and
+        Herzegovina","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.city_gate"],"details":["details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Kula
+        Širokac","osm_id":169785839,"tourism":"attraction","building":"yes","historic":"city_gate","osm_type":"w","wikidata":"Q60534887"}},"place_id":"511fd93148e36f324059138b41de60ee4540f00102f901efb91e0a0000000092030d4b756c6120c5a069726f6b6163"},"geometry":{"type":"Point","coordinates":[18.437061798257783,43.86233118248324]}},{"type":"Feature","properties":{"country":"Bosnia
+        and Herzegovina","country_code":"ba","state":"Federation of Bosnia and Herzegovina","county":"Sarajevo
+        Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari Grad
+        Municipality","suburb":"MZ \"Mošćanica\"","quarter":"Walled city of Vratnik","street":"Višegradska
+        kapija","lon":18.445762311111025,"lat":43.8618824,"formatted":"Višegradska
+        kapija, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Višegradska
+        kapija","address_line2":"71200 City of Sarajevo, Bosnia and Herzegovina","name":"Višegradska
+        kapija","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.city_gate"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Višegradska
+        kapija","osm_id":169851231,"name:pl":"Brama Wyszogrodzka","name:zh":"维谢格拉德门","tourism":"attraction","building":"yes","historic":"city_gate","osm_type":"w","wikidata":"Q20580505"}},"place_id":"51505e9a7a1d7232405904e8c32952ee4540f00102f9015fb91f0a000000009203135669c5a16567726164736b61206b6170696a61"},"geometry":{"type":"Point","coordinates":[18.44576231259117,43.86188242021311]}},{"type":"Feature","properties":{"name":"Crkva
+        svetog Vinka Paulskoga","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71000","district":"Centar
+        Municipality","suburb":"Mejtas","street":"Maršala Tita","lon":18.418830459074734,"lat":43.8587072,"formatted":"Crkva
+        svetog Vinka Paulskoga, Maršala Tita, 71000 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Crkva
+        svetog Vinka Paulskoga","address_line2":"Maršala Tita, 71000 City of Sarajevo,
+        Bosnia and Herzegovina","categories":["building","building.historic","building.place_of_worship","tourism","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.church"],"details":["details","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Crkva
+        svetog Vinka Paulskoga","osm_id":190196410,"amenity":"place_of_worship","name:pl":"Kościół
+        pw. św. Wincentego a Paulo","building":"church","historic":"yes","osm_type":"w","religion":"christian","wikidata":"Q3441650","addr:city":"Sarajevo","wikipedia":"hr:Crkva
+        sv. Vinka Paulskog u Sarajevu","addr:street":"Maršala Tita","denomination":"roman_catholic","addr:postcode":71000}},"place_id":"51f2002c61396b32405920db91c4e8ed4540f00102f901ba2a560b0000000092031c43726b766120737665746f672056696e6b61205061756c736b6f6761"},"geometry":{"type":"Point","coordinates":[18.418844292872514,43.858666011065225]}},{"type":"Feature","properties":{"name":"Sarajevska
+        sahat-kula","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","suburb":"Baščaršija","street":"Kujundžiluk","lon":18.42844854766129,"lat":43.85913895,"formatted":"Sarajevo
+        Clock Tower, Kujundžiluk, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Sarajevo
+        Clock Tower","address_line2":"Kujundžiluk, 71200 City of Sarajevo, Bosnia
+        and Herzegovina","categories":["building","building.tourism","man_made","man_made.tower","tourism","tourism.attraction","tourism.sights","tourism.sights.tower"],"details":["details","details.building","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Sarajevska
+        sahat-kula","height":30,"osm_id":191284860,"name:de":"Sarajevo Uhrenturm","name:en":"Sarajevo
+        Clock Tower","name:tr":"Saat Kulesi","name:zh":"钟楼","tourism":"attraction","building":"yes","man_made":"tower","osm_type":"w","wikidata":"Q1257048","wikipedia":"bs:Sarajevska
+        sahat-kula","roof:shape":"pyramidal","tower:type":"clock","roof:colour":"#4e4e50","roof:height":1.01,"building:colour":"#cdc6ba"}},"place_id":"514eceaecdae6d324059a4eaaa43f8ed4540f00102f9017cc6660b00000000920315536172616a6576736b612073616861742d6b756c61"},"geometry":{"type":"Point","coordinates":[18.42844853894922,43.85913892598663]}},{"type":"Feature","properties":{"name":"Tašlihan","country":"Bosnia
+        and Herzegovina","country_code":"ba","state":"Federation of Bosnia and Herzegovina","county":"Sarajevo
+        Canton","city":"City of Sarajevo","postcode":"71144","district":"Stari Grad
+        Municipality","suburb":"Baščaršija","street":"Zelenih beretki","lon":18.42791229528881,"lat":43.858592,"formatted":"Tašlihan,
+        Zelenih beretki, 71144 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Tašlihan","address_line2":"Zelenih
+        beretki, 71144 City of Sarajevo, Bosnia and Herzegovina","categories":["tourism","tourism.sights","tourism.sights.archaeological_site"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Tašlihan","osm_id":203591656,"name:tr":"Taşlıhan","historic":"archaeological_site","osm_type":"w","wikidata":"Q13090746","historic:civilization":"ottoman"}},"place_id":"51f93aea538a6d3240591c73070de4ed4540f00102f901e88f220c000000009203095461c5a16c6968616e"},"geometry":{"type":"Point","coordinates":[18.427891964612147,43.858522061002276]}},{"type":"Feature","properties":{"name":"Velika
+        Kula Barice","country":"Bosnia and Herzegovina","country_code":"ba","state":"Federation
+        of Bosnia and Herzegovina","county":"Sarajevo Canton","city":"City of Sarajevo","postcode":"71200","district":"Stari
+        Grad Municipality","neighbourhood":"Barice","suburb":"MZ \"Mošćanica\"","street":"Barice","lon":18.44255577485089,"lat":43.8839138,"formatted":"Velika
+        Kula Barice, Barice, 71200 City of Sarajevo, Bosnia and Herzegovina","address_line1":"Velika
+        Kula Barice","address_line2":"Barice, 71200 City of Sarajevo, Bosnia and Herzegovina","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.castle"],"details":["details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Velika
+        Kula Barice","osm_id":206366888,"building":"yes","historic":"castle","osm_type":"w","wikidata":"Q64788696","castle_type":"fortress","historic:civilization":"modern"}},"place_id":"5109519fb6507132405993b3600c24f14540f00102f901a8e84c0c0000000092031256656c696b61204b756c6120426172696365"},"geometry":{"type":"Point","coordinates":[18.442637838264123,43.8839126083541]}},{"type":"Feature","properties":{"name":"Cekovića
+        kuća","country":"Bosnia and Herzegovina","country_code":"ba","state":"Republika
+        Srpska","county":"City of Istočno Sarajevo","city":"Pale","municipality":"Pale
+        Municipality (RS)","postcode":"71420","district":"Pale","suburb":"Koran","street":"Romanijska","housenumber":"10","lon":18.568157448318196,"lat":43.819287200000005,"state_code":"SRP","formatted":"Cekovića
+        kuća, Romanijska 10, 71420 Pale, Bosnia and Herzegovina","address_line1":"Cekovića
+        kuća","address_line2":"Romanijska 10, 71420 Pale, Bosnia and Herzegovina","categories":["building","building.historic","tourism","tourism.sights"],"details":["details","details.building","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"Cekovića
+        kuća","osm_id":224740343,"name:sr":"Цековића кућа","building":"yes","historic":"building","osm_type":"w","wikidata":"Q19951118","addr:city":"Pale","addr:town":"Istočno
+        Sarajevo","wikipedia":"sr:Cekovića kuća","addr:street":"Romanijska","name:sr-Latn":"Cekovića
+        kuća","addr:postcode":71420,"building:levels":3,"addr:housenumber":10}},"place_id":"5149a519c4729132405966a42267dee84540f00102f901f743650d0000000092030f43656b6f7669c48761206b75c48761"},"geometry":{"type":"Point","coordinates":[18.568157440434593,43.8192871970321]}}]}'
+  recorded_at: Mon, 06 Mar 2023 17:57:25 GMT
+recorded_with: VCR 6.1.0

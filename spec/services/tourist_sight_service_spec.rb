@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe TouristSightService do
   describe 'class methods' do
     describe 'sights' do
-      it 'returns a hash of tourist sight data' do
+      it 'returns a hash of tourist sight data', :vcr do
         #Coords for Sarajevo
         lat = 43.8 
         lng = 18.4 
