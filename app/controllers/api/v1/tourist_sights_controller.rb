@@ -5,7 +5,7 @@ module Api
         if params[:country] == ''
           render json: { data: [] }
         else
-          tourist_sights = TouristSightsFacade.sights(country) 
+          tourist_sights = TouristSightsFacade.sights(params[:country]) 
           render json: TouristSightsSerializer.new(tourist_sights) 
         end
       end
