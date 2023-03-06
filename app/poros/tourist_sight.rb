@@ -1,4 +1,5 @@
 class TouristSight
+  attr_reader :id, :name, :address, :place_id
   def initialize(tourist_data)
     @id = nil
     @name = tourist_data[:properties][:name]
