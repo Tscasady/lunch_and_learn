@@ -9,6 +9,7 @@ class TouristSightsFacade
   end
 
   def self.capital_data(country)
-    CountryService.capital(country).first[:capitalInfo][:latlng]
+    response = CountryService.capital(country)
+    response.first[:capitalInfo][:latlng]
   end
 end
