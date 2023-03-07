@@ -2,7 +2,7 @@ module Api
   module V1
     class UsersController < ApplicationController
       def create
-        User.create!(user_params)
+        render json: UserSerializer.new(User.create!(user_params)), status: 201
       end
 
       private 
