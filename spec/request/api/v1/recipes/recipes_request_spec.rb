@@ -8,6 +8,11 @@ RSpec.describe 'The recipe request', type: :request do
       expect(response).to be_successful
 
       recipes = JSON.parse(response.body, symbolize_names: true)[:data]
+
+      expected_keys = %i[id type attributes]
+      expected_attributes = %i[title url country image]
+      expect(recipes.first.keys).to eq expected_keys
+      expect(recipes.first[:attributes].keys).to eq expected_attributes
       
       expect(recipes).to be_a Array
       recipes.each do |recipe| 
