@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Mar 2023 18:10:21 GMT
+      - Tue, 07 Mar 2023 03:39:27 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -50,10 +50,10 @@ http_interactions:
         flag of Thailand is composed of five horizontal bands of red, white, blue,
         white and red, with the central blue band twice the height of the other four
         bands."},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/th.png","svg":"https://mainfacts.com/media/images/coats_of_arms/th.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[13.75,100.52]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
-  recorded_at: Mon, 06 Mar 2023 18:10:21 GMT
+  recorded_at: Tue, 07 Mar 2023 03:39:27 GMT
 - request:
     method: get
-    uri: https://api.geoapify.com/v2/places?apiKey=apiKey&categories=tourism.sights&filter=circle:100.52,13.75,20000
+    uri: https://api.geoapify.com/v2/places?apiKey=<apiKey>&categories=tourism.sights&filter=circle:100.52,13.75,20000
     body:
       encoding: US-ASCII
       string: ''
@@ -70,7 +70,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Mon, 06 Mar 2023 18:10:31 GMT
+      - Tue, 07 Mar 2023 03:39:33 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -100,13 +100,13 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AvVMrShGo3ptO8j6H%2BhqenWHBSqCYaPzx2s0gb7xj9WELJWBTt7lGF9zOlOi65joet4eAHEt0f3YfwKQPimypUlru0%2FVX63beo2Saa%2BVv5kC6iuFceB%2BfNKnO5Ss0ULCOzk%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=EUPLwdHu2pI7hXngkdE6%2BsYhmKft3POjMcwYOJ5lJIHlVYOEdPPJo2MaZGbIik0wQvumsU6C4BTLzlpzqJn0px2UgEIIIT5pnrMynOt%2BOXIFSRCI47Sp6up9T0nwuQ0lAdU%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a3c8e187df6638d-ORD
+      - 7a3fcfbc2f3b2c58-ORD
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -279,5 +279,5 @@ http_interactions:
         OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระที่นั่งอภิเศกดุสิต","layer":1,"osm_id":205707903,"name:en":"Abhisek
         Dusit Throne Hall","building":"yes","historic":"yes","osm_type":"w","wikidata":"Q7475804","wikipedia":"en:Abhisek
         Dusit Throne Hall"}},"place_id":"51bbd6af2bd620594059e628ddd6088c2b40f00102f9017fda420c0000000092033fe0b89ee0b8a3e0b8b0e0b897e0b8b5e0b988e0b899e0b8b1e0b988e0b887e0b8ade0b8a0e0b8b4e0b980e0b8a8e0b881e0b894e0b8b8e0b8aae0b8b4e0b895"},"geometry":{"type":"Point","coordinates":[100.51307193919904,13.773504938599626]}}]}'
-  recorded_at: Mon, 06 Mar 2023 18:10:31 GMT
+  recorded_at: Tue, 07 Mar 2023 03:39:33 GMT
 recorded_with: VCR 6.1.0

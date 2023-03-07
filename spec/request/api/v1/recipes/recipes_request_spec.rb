@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe 'The recipe request', type: :request do
 #TODO: Test that some fields are not present
   describe 'provides the recipes by country endpoint' do
-    it 'can return all recipes for a given country' do
+    it 'can return all recipes for a given country', :vcr do
       get '/api/v1/recipes?country=thailand'
       expect(response).to be_successful
 
@@ -39,7 +39,7 @@ RSpec.describe 'The recipe request', type: :request do
       end
     end
 
-    it 'can return an empty array if no recipes are found' do
+    it 'can return an empty array if no recipes are found', :vcr do
       get '/api/v1/recipes?country=notcountry'
       expect(response).to be_successful
 
@@ -48,7 +48,7 @@ RSpec.describe 'The recipe request', type: :request do
       expect(recipes).to eq []
     end
 
-    it 'can return an empty array if country param is an empty string' do
+    it 'can return an empty array if country param is an empty string', :vcr do
       get '/api/v1/recipes?country='
       expect(response).to be_successful
 
