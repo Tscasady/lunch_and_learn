@@ -5,6 +5,10 @@ class CountryService
     parse(conn.get('/v3.1/all')) 
   end
 
+  def self.capital(country)
+    parse(conn.get("/v3.1/name/#{country}"))
+  end
+
   def self.conn
     Faraday.new(conn_params)
   end

@@ -1,0 +1,283 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://restcountries.com/v3.1/name/thailand
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Mar 2023 18:10:21 GMT
+      Server:
+      - Apache/2.4.38 (Debian)
+      Cache-Control:
+      - public, immutable, max-age=31556926
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1494'
+    body:
+      encoding: UTF-8
+      string: '[{"name":{"common":"Thailand","official":"Kingdom of Thailand","nativeName":{"tha":{"official":"ราชอาณาจักรไทย","common":"ประเทศไทย"}}},"tld":[".th",".ไทย"],"cca2":"TH","ccn3":"764","cca3":"THA","cioc":"THA","independent":true,"status":"officially-assigned","unMember":true,"currencies":{"THB":{"name":"Thai
+        baht","symbol":"฿"}},"idd":{"root":"+6","suffixes":["6"]},"capital":["Bangkok"],"altSpellings":["TH","Prathet","Thai","Kingdom
+        of Thailand","ราชอาณาจักรไทย","Ratcha Anachak Thai"],"region":"Asia","subregion":"South-Eastern
+        Asia","languages":{"tha":"Thai"},"translations":{"ara":{"official":"مملكة
+        تايلند","common":"تايلند"},"bre":{"official":"Rouantelezh Thailand","common":"Thailand"},"ces":{"official":"Thajské
+        království","common":"Thajsko"},"cym":{"official":"Kingdom of Thailand","common":"Thailand"},"deu":{"official":"Königreich
+        Thailand","common":"Thailand"},"est":{"official":"Tai Kuningriik","common":"Tai"},"fin":{"official":"Thaimaan
+        kuningaskunta","common":"Thaimaa"},"fra":{"official":"Royaume de Thaïlande","common":"Thaïlande"},"hrv":{"official":"Kraljevina
+        Tajland","common":"Tajland"},"hun":{"official":"Thaiföldi Királyság","common":"Thaiföld"},"ita":{"official":"Regno
+        di Thailandia","common":"Tailandia"},"jpn":{"official":"タイ王国","common":"タイ"},"kor":{"official":"타이
+        왕국","common":"태국"},"nld":{"official":"Koninkrijk Thailand","common":"Thailand"},"per":{"official":"پادشاهی
+        تایلند","common":"تایلند"},"pol":{"official":"Królestwo Tajlandii","common":"Tajlandia"},"por":{"official":"Reino
+        da Tailândia","common":"Tailândia"},"rus":{"official":"Королевство Таиланд","common":"Таиланд"},"slk":{"official":"Thajské
+        kráľovstvo","common":"Thajsko"},"spa":{"official":"Reino de Tailandia","common":"Tailandia"},"srp":{"official":"Краљевина
+        Тајланд","common":"Тајланд"},"swe":{"official":"Konungariket Thailand","common":"Thailand"},"tur":{"official":"Tayland
+        Krallığı","common":"Tayland"},"urd":{"official":"مملکتِ تھائی لینڈ","common":"تھائی
+        لینڈ"},"zho":{"official":"泰王国","common":"泰国"}},"latlng":[15.0,100.0],"landlocked":false,"borders":["MMR","KHM","LAO","MYS"],"area":513120.0,"demonyms":{"eng":{"f":"Thai","m":"Thai"},"fra":{"f":"Thaïlandaise","m":"Thaïlandais"}},"flag":"\uD83C\uDDF9\uD83C\uDDED","maps":{"googleMaps":"https://goo.gl/maps/qeU6uqsfW4nCCwzw9","openStreetMaps":"https://www.openstreetmap.org/relation/2067731"},"population":69799978,"gini":{"2019":34.9},"fifa":"THA","car":{"signs":["T"],"side":"left"},"timezones":["UTC+07:00"],"continents":["Asia"],"flags":{"png":"https://flagcdn.com/w320/th.png","svg":"https://flagcdn.com/th.svg","alt":"The
+        flag of Thailand is composed of five horizontal bands of red, white, blue,
+        white and red, with the central blue band twice the height of the other four
+        bands."},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/th.png","svg":"https://mainfacts.com/media/images/coats_of_arms/th.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[13.75,100.52]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
+  recorded_at: Mon, 06 Mar 2023 18:10:21 GMT
+- request:
+    method: get
+    uri: https://api.geoapify.com/v2/places?apiKey=apiKey&categories=tourism.sights&filter=circle:100.52,13.75,20000
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v2.7.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Mon, 06 Mar 2023 18:10:31 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Transfer-Encoding:
+      - chunked
+      Connection:
+      - keep-alive
+      Api-Version:
+      - '1.0'
+      Access-Control-Allow-Origin:
+      - "*"
+      Access-Control-Allow-Headers:
+      - accept, accept-language, content-language, access-control-max-age, access-control-allow-headers,
+        access-control-allow-methods, access-control-allow-origin, allow, api-version,
+        cf-ray, content-encoding, content-type, date, expect-ct, server, status, vary,
+        cache-control, etag, last-modified, expires, host, cf-iplatitude, cf-iplongitude,
+        accept-encoding, x-forwarded-for, x-forwarded-proto, cf-visitor, user-agent,
+        cf-connecting-ip, cdn-loop, cf-ipcity, cf-ipcontinent, cf-ipcountry, x-forwarded-port
+      Access-Control-Allow-Methods:
+      - GET, POST, DELETE, OPTIONS, PUT
+      Access-Control-Allow-Credentials:
+      - 'true'
+      Vary:
+      - Accept-Encoding
+      - Accept-Encoding
+      Cache-Control:
+      - private, max-age=0, no-cache
+      Cf-Cache-Status:
+      - DYNAMIC
+      Report-To:
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=AvVMrShGo3ptO8j6H%2BhqenWHBSqCYaPzx2s0gb7xj9WELJWBTt7lGF9zOlOi65joet4eAHEt0f3YfwKQPimypUlru0%2FVX63beo2Saa%2BVv5kC6iuFceB%2BfNKnO5Ss0ULCOzk%3D"}],"group":"cf-nel","max_age":604800}'
+      Nel:
+      - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
+      Server:
+      - cloudflare
+      Cf-Ray:
+      - 7a3c8e187df6638d-ORD
+      Alt-Svc:
+      - h3=":443"; ma=86400, h3-29=":443"; ma=86400
+    body:
+      encoding: UTF-8
+      string: '{"type":"FeatureCollection","features":[{"type":"Feature","properties":{"name":"พระบรมมหาราชวัง","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Tian","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Sanam Chai Road","lon":100.4918642714286,"lat":13.7493514,"formatted":"Grand
+        Palace, Sanam Chai Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Grand
+        Palace","address_line2":"Sanam Chai Road, Phra Nakhon District, Bangkok 10200,
+        Thailand","categories":["fee","tourism","tourism.attraction","tourism.sights","tourism.sights.castle","wheelchair","wheelchair.yes"],"details":["details","details.contact","details.facilities","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"fee":"yes","name":"พระบรมมหาราชวัง","email":"ticket@palaces.mail.go.th","osm_id":23482754,"barrier":"wall","name:de":"Großer
+        Palast","name:en":"Grand Palace","name:es":"Gran Palacio","name:ja":"グランドパレス","name:ko":"방콕
+        왕궁","name:pt":"Grande Palácio","name:ru":"Королевский дворец","name:th":"พระบรมมหาราชวัง","name:tr":"Büyük
+        Saray","name:zh":"曼谷大王宫","tourism":"attraction","website":"https://www.royalgrandpalace.th/en/home","historic":"castle","osm_type":"w","wikidata":"Q873769","mapillary":"https://www.mapillary.com/map/im/_U0NFzApfUtjloIjLzDgYQ","wikipedia":"en:Grand
+        Palace","wheelchair":"yes","alt_name:en":"Grand Royal Palace","castle_type":"palace","description":"https://photos.app.goo.gl/ExPw1koPgsE2wo2UA","alt_name_1:en":"The
+        Grand Palace & Wat Phra Kaew","opening_hours":"Mo-Su 08:30-15:30"}},"place_id":"514962c43d791f594059cd959f26e17f2b40f00102f901825166010000000092032de0b89ee0b8a3e0b8b0e0b89ae0b8a3e0b8a1e0b8a1e0b8abe0b8b2e0b8a3e0b8b2e0b88ae0b8a7e0b8b1e0b887"},"geometry":{"type":"Point","coordinates":[100.49177498033636,13.74976463983594]}},{"type":"Feature","properties":{"name":"วัดพระศรีรัตนศาสดาราม","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Chang","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Sanam Chai Road","lon":100.49265919290742,"lat":13.75149735,"formatted":"Wat
+        Phra Kaew, Sanam Chai Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Wat
+        Phra Kaew","address_line2":"Sanam Chai Road, Phra Nakhon District, Bangkok
+        10200, Thailand","categories":["tourism","tourism.attraction","tourism.sights","tourism.sights.place_of_worship"],"details":["details","details.facilities","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"url":"https://youtu.be/kIfUGaCk6kI","name":"วัดพระศรีรัตนศาสดาราม","osm_id":230010054,"amenity":"place_of_worship","name:en":"Wat
+        Phra Kaew","name:es":"Templo del Buda de Esmeralda","name:he":"מקדש בודהה
+        האמרלד","name:ja":"ワット・プラケオ","name:ru":"Храм Изумрудного Будды","name:th":"วัดพระศรีรัตนศาสดาราม","name:tr":"Phra
+        Kaew Tapınağı","name:zh":"玉佛寺","tourism":"attraction","historic":"yes","loc_name":"วัดพระแก้ว","osm_type":"w","religion":"buddhist","wikidata":"Q1045876","wikipedia":"en:Wat
+        Phra Kaew","wheelchair":"no","alt_name:de":"Tempel des Smaragd-Buddha","alt_name:en":"Temple
+        of the Emerald Buddha","description":"https://photos.app.goo.gl/XqMb2kuGpEWrCZD19","opening_hours":"08:30-15:30"}},"place_id":"515e46611d881f594059c9330dbcc6802b40f00102f901c6acb50d0000000092033fe0b8a7e0b8b1e0b894e0b89ee0b8a3e0b8b0e0b8a8e0b8a3e0b8b5e0b8a3e0b8b1e0b895e0b899e0b8a8e0b8b2e0b8aae0b894e0b8b2e0b8a3e0b8b2e0b8a1"},"geometry":{"type":"Point","coordinates":[100.49268278598308,13.751516224490745]}},{"type":"Feature","properties":{"name":"บรมบรรพต","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10100","suburb":"Pom
+        Prap Sattru Phai District","quarter":"Ban Bat Subdistrict","street":"Paribatra
+        Road","housenumber":"344","lon":100.50669205107302,"lat":13.7538556,"formatted":"Golden
+        Mount, 344, Paribatra Road, Pom Prap Sattru Phai District, Bangkok 10100,
+        Thailand","address_line1":"Golden Mount","address_line2":"344, Paribatra Road,
+        Pom Prap Sattru Phai District, Bangkok 10100, Thailand","categories":["building","building.historic","building.tourism","tourism","tourism.attraction","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument","tourism.sights.place_of_worship.temple"],"details":["details","details.contact","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"บรมบรรพต","layer":1,"phone":"+66
+        2 621 2280","osm_id":243936903,"name:en":"Golden Mount","name:fr":"La Montagne
+        d''Or","name:he":"הר הזהב","name:ja":"ゴールデンマウンテン","name:th":"บรมบรรพต","name:tr":"Altın
+        Dağ","name:zh":"金山寺","tourism":"attraction","alt_name":"ภูเขาทอง","building":"temple","historic":"monument","osm_type":"w","wikidata":"Q13017449","addr:city":"Pom
+        Prap Sattru Phai, Bangkok","mapillary":816858482268267,"wikipedia":"th:พระบรมบรรพต","addr:street":"ถนนบริพัตร","alt_name:en":"Golden
+        Mountain","alt_name:es":"Montaña Dorada;Monte Dorado","alt_name:th":"ภูเขาทอง","description":"https://photos.app.goo.gl/QnwdVmJQBqHMtLSD9","addr:postcode":10100,"opening_hours":"Mo-Su
+        07:30-19:00","addr:housenumber":344}},"place_id":"518c36e0ba6d20594059a4cf8b3ef9812b40f00102f901872e8a0e00000000920318e0b89ae0b8a3e0b8a1e0b89ae0b8a3e0b8a3e0b89ee0b895"},"geometry":{"type":"Point","coordinates":[100.50669738670166,13.753854708258423]}},{"type":"Feature","properties":{"name":"พระศรีรัตนเจดีย์","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Chang","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Na Phra Lan Road","lon":100.49228748725285,"lat":13.751612600000001,"formatted":"Phra
+        Si Rattana Chedi, Na Phra Lan Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Phra
+        Si Rattana Chedi","address_line2":"Na Phra Lan Road, Phra Nakhon District,
+        Bangkok 10200, Thailand","categories":["building","building.historic","man_made","tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument","tourism.sights.place_of_worship.temple"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระศรีรัตนเจดีย์","tomb":"st","image":"https://images.mapillary.com/uBzzP1QdS4TCpHZWPN6oxg/thumb-2048.jpg","osm_id":23482988,"name:en":"Phra
+        Si Rattana Chedi","building":"temple","historic":"monument","man_made":"stupa","osm_type":"w","wikidata":"Q16004232","mapillary":495415711654261}},"place_id":"51fb5354a3811f59405913f52f23d4802b40f00102f9016c52660100000000920330e0b89ee0b8a3e0b8b0e0b8a8e0b8a3e0b8b5e0b8a3e0b8b1e0b895e0b899e0b980e0b888e0b894e0b8b5e0b8a2e0b98c"},"geometry":{"type":"Point","coordinates":[100.49228747592126,13.751618480304876]}},{"type":"Feature","properties":{"name":"อนุสาวรีย์ทหารอาสา
+        สงครามโลกครั้งที่ 1","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Pra Chan","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Rachini Road","lon":100.4932545,"lat":13.758211,"formatted":"Memorial
+        of Expeditionary Force, Rachini Road, Phra Nakhon District, Bangkok 10200,
+        Thailand","address_line1":"Memorial of Expeditionary Force","address_line2":"Rachini
+        Road, Phra Nakhon District, Bangkok 10200, Thailand","categories":["tourism","tourism.sights","tourism.sights.memorial"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"อนุสาวรีย์ทหารอาสา
+        สงครามโลกครั้งที่ 1","image":"https://images.mapillary.com/rF5WS1ezb7VqcDBDxSPpmQ/thumb-2048.jpg","osm_id":1886961362,"name:en":"Memorial
+        of Expeditionary Force","name:th":"อนุสาวรีย์ทหารอาสา สงครามโลกครั้งที่ 1","historic":"memorial","memorial":"war_memorial","osm_type":"n","wikidata":"Q13023636","mapillary":2990198357879972,"wikipedia":"th:อนุสาวรีย์ทหารอาสา"}},"place_id":"51b686527b911f59405911e56e3b34842b40f00103f901d2be78700000000092036ce0b8ade0b899e0b8b8e0b8aae0b8b2e0b8a7e0b8a3e0b8b5e0b8a2e0b98ce0b897e0b8abe0b8b2e0b8a3e0b8ade0b8b2e0b8aae0b8b220e0b8aae0b887e0b884e0b8a3e0b8b2e0b8a1e0b982e0b8a5e0b881e0b884e0b8a3e0b8b1e0b989e0b887e0b897e0b8b5e0b9882031"},"geometry":{"type":"Point","coordinates":[100.4932545,13.758210999762499]}},{"type":"Feature","properties":{"name":"The
+        monument of her majesty queen Sunanda Kumariratana and her royal highness
+        princess Kannabhorn Bejraratana","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Tian","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Rachini Road","lon":100.4953406,"lat":13.7484049,"formatted":"The
+        monument of her majesty queen Sunanda Kumariratana and her royal highness
+        princess Kannabhorn Bejraratana, Rachini Road, Phra Nakhon District, Bangkok
+        10200, Thailand","address_line1":"The monument of her majesty queen Sunanda
+        Kumariratana and her royal highness princess Kannabhorn Bejraratana","address_line2":"Rachini
+        Road, Phra Nakhon District, Bangkok 10200, Thailand","categories":["tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"The
+        monument of her majesty queen Sunanda Kumariratana and her royal highness
+        princess Kannabhorn Bejraratana","image":"https://images.mapillary.com/isP1j366lf7jC2_OE2TJww/thumb-2048.jpg","osm_id":4200510216,"historic":"monument","osm_type":"n","mapillary":936511030516128,"opening_hours":"Mo-Su
+        04:30-21:00"}},"place_id":"5162580fa9b31f594059604851ed2e7f2b40f00103f90108b35efa0000000092036d546865206d6f6e756d656e74206f6620686572206d616a6573747920717565656e2053756e616e6461204b756d617269726174616e6120616e642068657220726f79616c20686967686e657373207072696e63657373204b616e6e6162686f726e2042656a7261726174616e61"},"geometry":{"type":"Point","coordinates":[100.49534059999999,13.748404899761397]}},{"type":"Feature","properties":{"name":"อนุสาวรีย์หมู","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Tha
+        Tian","suburb":"Phra Nakhon District","quarter":"Phra Borom Maha Ratchawang
+        Subdistrict","street":"Rachini Road","lon":100.49621,"lat":13.74989,"formatted":"Pig
+        Memorial, Rachini Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Pig
+        Memorial","address_line2":"Rachini Road, Phra Nakhon District, Bangkok 10200,
+        Thailand","categories":["tourism","tourism.sights","tourism.sights.memorial"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"อนุสาวรีย์หมู","image":"https://images.mapillary.com/d0CAITE50mo2vm8E7CvjLQ/thumb-2048.jpg","osm_id":5820861955,"name:en":"Pig
+        Memorial","name:th":"อนุสาวรีย์หมู","historic":"memorial","osm_type":"n","mapillary":1774945372678854,"wikipedia":"th:อนุสาวรีย์หมู","start_date":1913,"description":"https://photos.app.goo.gl/Q3fGHXqujPrLQ2zw5","official_name:th":"อนุสาวรีย์สหชาติ"}},"place_id":"51ae7c96e7c11f59405992250195f17f2b40f00103f901034ef35a01000000920327e0b8ade0b899e0b8b8e0b8aae0b8b2e0b8a7e0b8a3e0b8b5e0b8a2e0b98ce0b8abe0b8a1e0b8b9"},"geometry":{"type":"Point","coordinates":[100.49620999999999,13.749889999761567]}},{"type":"Feature","properties":{"name":"พระราชวังดุสิต","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10300","suburb":"Dusit
+        District","quarter":"Dusit Subdistrict","street":"Nakhon Ratchasima Road","lon":100.51254327125042,"lat":13.77381745,"formatted":"Dusit
+        Palace, Nakhon Ratchasima Road, Dusit District, Bangkok 10300, Thailand","address_line1":"Dusit
+        Palace","address_line2":"Nakhon Ratchasima Road, Dusit District, Bangkok 10300,
+        Thailand","categories":["tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระราชวังดุสิต","osm_id":-12822616,"name:en":"Dusit
+        Palace","name:th":"พระราชวังดุสิต","historic":"castle","osm_type":"r","wikidata":"Q2089016","wikipedia":"th:พระราชวังดุสิต","castle_type":"palace"}},"place_id":"519270aafec420594059fb88f3d98e8b2b40f00101f90158a8c3000000000092032ae0b89ee0b8a3e0b8b0e0b8a3e0b8b2e0b88ae0b8a7e0b8b1e0b887e0b894e0b8b8e0b8aae0b8b4e0b895"},"geometry":{"type":"Point","coordinates":[100.51202360767846,13.77257424447861]}},{"type":"Feature","properties":{"name":"พระตำหนักจิตรลดารโหฐาน","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10300","suburb":"Dusit
+        District","quarter":"Suan Chitlada Subdistrict","street":"Sukothai 5","lon":100.5206229745518,"lat":13.76821025,"formatted":"Chitralada
+        Royal Villa, Sukothai 5, Dusit District, Bangkok 10300, Thailand","address_line1":"Chitralada
+        Royal Villa","address_line2":"Sukothai 5, Dusit District, Bangkok 10300, Thailand","categories":["tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.contact","details.historic"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระตำหนักจิตรลดารโหฐาน","phone":"+66
+        2 282 8200","osm_id":23630366,"barrier":"fence","name:de":"Chitralada-Palast","name:en":"Chitralada
+        Royal Villa","name:th":"พระตำหนักจิตรลดารโหฐาน","historic":"castle","osm_type":"w","alt_name:en":"Chitralada
+        Palace","alt_name:th":"วังสวนจิตร","castle_type":"palace","short_name:th":"สวนจิตรลดา"}},"place_id":"51a05044795421594059906a468161892b40f00102f9011e92680100000000920342e0b89ee0b8a3e0b8b0e0b895e0b8b3e0b8abe0b899e0b8b1e0b881e0b888e0b8b4e0b895e0b8a3e0b8a5e0b894e0b8b2e0b8a3e0b982e0b8abe0b890e0b8b2e0b899"},"geometry":{"type":"Point","coordinates":[100.52078086539632,13.76832202896665]}},{"type":"Feature","properties":{"name":"สถานีรถไฟกรุงเทพ","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10330","district":"Hua
+        Lamphong","suburb":"Pathum Wan District","quarter":"Rong Mueang Subdistrict","street":"To
+        MRT","lon":100.51702749245666,"lat":13.740825449999999,"formatted":"Bangkok
+        Railway Station, To MRT, Pathum Wan District, Bangkok 10330, Thailand","address_line1":"Bangkok
+        Railway Station","address_line2":"To MRT, Pathum Wan District, Bangkok 10330,
+        Thailand","categories":["building","building.historic","building.transportation","tourism","tourism.sights"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"สถานีรถไฟกรุงเทพ","osm_id":31974077,"name:en":"Bangkok
+        Railway Station","name:he":"תחנת רכבת בנגקוק","name:ko":"방콕기차역-후알람퐁","name:th":"สถานีรถไฟกรุงเทพ","building":"train_station","historic":"yes","osm_type":"w","wikidata":"Q125929","wikipedia":"th:สถานีรถไฟกรุงเทพ","alt_name:en":"Hua
+        Lamphong","alt_name:th":"สถานีรถไฟหัวลำโพง;สถานีหัวลำโพง;สถานีกรุงเทพ","loc_name:en":"Hualamphong","loc_name:th":"หัวลำโพง"}},"place_id":"5190f924131421594059991ac65e117b2b40f00102f901bde2e70100000000920330e0b8aae0b896e0b8b2e0b899e0b8b5e0b8a3e0b896e0b984e0b89fe0b881e0b8a3e0b8b8e0b887e0b980e0b897e0b89e"},"geometry":{"type":"Point","coordinates":[100.51685026751352,13.740366899187665]}},{"type":"Feature","properties":{"name":"พระที่นั่งอนันตสมาคม","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10300","suburb":"Dusit
+        District","quarter":"Dusit Subdistrict","street":"Dusit Palace Plaza","lon":100.5130682392275,"lat":13.77169175,"formatted":"Ananta
+        Samakhom Throne Hall, Dusit Palace Plaza, Dusit District, Bangkok 10300, Thailand","address_line1":"Ananta
+        Samakhom Throne Hall","address_line2":"Dusit Palace Plaza, Dusit District,
+        Bangkok 10300, Thailand","categories":["building","building.historic","tourism","tourism.sights"],"details":["details","details.building","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระที่นั่งอนันตสมาคม","layer":1,"osm_id":31987148,"name:en":"Ananta
+        Samakhom Throne Hall","name:th":"พระที่นั่งอนันตสมาคม","name:zh":"阿南达沙玛空皇家御会馆","alt_name":"Phra
+        Thinang Anantasamakhom","building":"yes","historic":"yes","osm_type":"w","wikidata":"Q485954","wikipedia":"en:Ananta
+        Samakhom Throne Hall","start_date":1915}},"place_id":"51dae8ef49d6205940591d728e311a8b2b40f00102f901cc15e8010000000092033ce0b89ee0b8a3e0b8b0e0b897e0b8b5e0b988e0b899e0b8b1e0b988e0b887e0b8ade0b899e0b8b1e0b899e0b895e0b8aae0b8a1e0b8b2e0b884e0b8a1"},"geometry":{"type":"Point","coordinates":[100.51307915142698,13.771684216154478]}},{"type":"Feature","properties":{"name":"วัดเบญจมบพิตรดุสิตวนารามราชวรวิหาร","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10300","suburb":"Dusit
+        District","quarter":"Dusit Subdistrict","street":"Thanon Likhit","lon":100.51366111085369,"lat":13.76586695,"formatted":"Wat
+        Benchamabophit Dusit Wanaram Ratchaworawihan, Thanon Likhit, Dusit District,
+        Bangkok 10300, Thailand","address_line1":"Wat Benchamabophit Dusit Wanaram
+        Ratchaworawihan","address_line2":"Thanon Likhit, Dusit District, Bangkok 10300,
+        Thailand","categories":["tourism","tourism.attraction","tourism.sights","tourism.sights.place_of_worship"],"details":["details","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"วัดเบญจมบพิตรดุสิตวนารามราชวรวิหาร","osm_id":31987718,"amenity":"place_of_worship","name:en":"Wat
+        Benchamabophit Dusit Wanaram Ratchaworawihan","name:es":"Wat Benchamabophit
+        Dusit Wanaram Ratchaworawihan","name:km":"វត្តបញ្ចមបពិត្រ តុសិតវនារាម រាជវរវិហារ","name:ru":"Мраморный
+        храм","name:th":"วัดเบญจมบพิตรดุสิตวนารามราชวรวิหาร","tourism":"attraction","historic":"yes","osm_type":"w","religion":"buddhist","wikidata":"Q2165719","short_name":"วัดเบญจมบพิตร"}},"place_id":"51d132c12ddf20594059f23c32ec39882b40f00102f9010618e80100000000920366e0b8a7e0b8b1e0b894e0b980e0b89ae0b88de0b888e0b8a1e0b89ae0b89ee0b8b4e0b895e0b8a3e0b894e0b8b8e0b8aae0b8b4e0b895e0b8a7e0b899e0b8b2e0b8a3e0b8b2e0b8a1e0b8a3e0b8b2e0b88ae0b8a7e0b8a3e0b8a7e0b8b4e0b8abe0b8b2e0b8a3"},"geometry":{"type":"Point","coordinates":[100.51362174860994,13.766066914684846]}},{"type":"Feature","properties":{"name":"อาสนวิหารอัสสัมชัญ","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10500","suburb":"Bang
+        Rak District","quarter":"Bang Rak Subdistrict","street":"Soi Charoen Krung
+        40","lon":100.51514030816995,"lat":13.7231103,"formatted":"Assumption Cathedral,
+        Soi Charoen Krung 40, Bang Rak District, Bangkok 10500, Thailand","address_line1":"Assumption
+        Cathedral","address_line2":"Soi Charoen Krung 40, Bang Rak District, Bangkok
+        10500, Thailand","categories":["building","building.historic","building.place_of_worship","tourism","tourism.sights","tourism.sights.place_of_worship","tourism.sights.place_of_worship.cathedral"],"details":["details","details.building","details.historic","details.place_of_worship","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"อาสนวิหารอัสสัมชัญ","osm_id":32005418,"amenity":"place_of_worship","name:en":"Assumption
+        Cathedral","name:fr":"cathédrale de l''Assomption","name:ja":"アサンプション大聖堂","name:nl":"Kathedraal
+        van Bangkok","name:pl":"Katedra Wniebowzięcia NMP","name:ru":"Успенский собор","name:zh":"聖母升天主教座堂","building":"cathedral","historic":"yes","osm_type":"w","religion":"christian","wikidata":"Q2495658","addr:city":"กรุงเทพมหานคร","wikipedia":"en:Assumption
+        Cathedral, Bangkok","is_in:city":"Bangkok","start_date":1821,"addr:country":"TH","denomination":"catholic","is_in:country":"Thailand"}},"place_id":"51fb3d2375f820594059cbb96a1c3a722b40f00102f9012a5de80100000000920336e0b8ade0b8b2e0b8aae0b899e0b8a7e0b8b4e0b8abe0b8b2e0b8a3e0b8ade0b8b1e0b8aae0b8aae0b8b1e0b8a1e0b88ae0b8b1e0b88d"},"geometry":{"type":"Point","coordinates":[100.51516464654553,13.723099601772352]}},{"type":"Feature","properties":{"name":"วังสระปทุม","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10330","suburb":"Pathum
+        Wan District","quarter":"Wang Mai Subdistrict","street":"Phaya Thai Road","lon":100.53266440758568,"lat":13.7479473,"formatted":"Sa
+        Pathum Palace, Phaya Thai Road, Pathum Wan District, Bangkok 10330, Thailand","address_line1":"Sa
+        Pathum Palace","address_line2":"Phaya Thai Road, Pathum Wan District, Bangkok
+        10330, Thailand","categories":["access_limited","access_limited.private","leisure","leisure.park","leisure.park.garden","tourism","tourism.sights","tourism.sights.castle"],"details":["details","details.historic","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"วังสระปทุม","access":"private","osm_id":37910308,"barrier":"wall","leisure":"garden","name:en":"Sa
+        Pathum Palace","name:th":"วังสระปทุม","historic":"castle","osm_type":"w","wikidata":"Q2315094","wikipedia":"th:วังสระปทุม","castle_type":"palace"}},"place_id":"517a72dc331922594059cf7add75ff7e2b40f00102f901247742020000000092031ee0b8a7e0b8b1e0b887e0b8aae0b8a3e0b8b0e0b89be0b897e0b8b8e0b8a1"},"geometry":{"type":"Point","coordinates":[100.53278824356121,13.748042758260821]}},{"type":"Feature","properties":{"name":"ป้อมมหากาฬ","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","suburb":"Phra
+        Nakhon District","quarter":"Bowon Niwet Subdistrict","street":"Maha Chai Road","lon":100.50551094441775,"lat":13.75566025,"formatted":"Mahakan
+        Fort, Maha Chai Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Mahakan
+        Fort","address_line2":"Maha Chai Road, Phra Nakhon District, Bangkok 10200,
+        Thailand","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"ป้อมมหากาฬ","osm_id":103022352,"name:en":"Mahakan
+        Fort","name:th":"ป้อมมหากาฬ","building":"yes","historic":"monument","osm_type":"w","wikidata":"Q13017020"}},"place_id":"51244e854a5a20594059d22582c6e2822b40f00102f90110ff23060000000092031ee0b89be0b989e0b8ade0b8a1e0b8a1e0b8abe0b8b2e0b881e0b8b2e0b8ac"},"geometry":{"type":"Point","coordinates":[100.50551093118753,13.755636409175086]}},{"type":"Feature","properties":{"name":"ป้อมพระสุเมรุ","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","district":"Phra
+        Athit","suburb":"Phra Nakhon District","quarter":"Chana Songkhram Subdistrict","street":"Phra
+        Athit Road","lon":100.49573702090534,"lat":13.764008950000001,"formatted":"Phra
+        Sumen Fort, Phra Athit Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Phra
+        Sumen Fort","address_line2":"Phra Athit Road, Phra Nakhon District, Bangkok
+        10200, Thailand","categories":["building","building.historic","tourism","tourism.sights","tourism.sights.fort"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"ป้อมพระสุเมรุ","osm_id":107936513,"name:en":"Phra
+        Sumen Fort","name:tr":"Phra Sumen Kalesi","building":"yes","historic":"fort","osm_type":"w","wikidata":"Q13017018"}},"place_id":"513dc31e30ba1f594059e3907a6e2b872b40f00102f90101fb6e0600000000920327e0b89be0b989e0b8ade0b8a1e0b89ee0b8a3e0b8b0e0b8aae0b8b8e0b980e0b8a1e0b8a3e0b8b8"},"geometry":{"type":"Point","coordinates":[100.49573901180425,13.764003231488863]}},{"type":"Feature","properties":{"name":"อนุสาวรีย์ชัยสมรภูมิ","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10400","suburb":"Ratchathewi
+        District","quarter":"Thung Phaya Thai Subdistrict","street":"Victory Monument
+        Circle","lon":100.53828576382023,"lat":13.76493095,"formatted":"Victory Monument
+        Circle, Ratchathewi District, Bangkok 10400, Thailand","address_line1":"Victory
+        Monument Circle","address_line2":"Ratchathewi District, Bangkok 10400, Thailand","categories":["tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"อนุสาวรีย์ชัยสมรภูมิ","height":0,"osm_id":158185227,"name:en":"Victory
+        Monument","name:he":"אנדרטת הניצחון","name:ko":"전승기념탑","name:th":"อนุสาวรีย์ชัยสมรภูมิ","name:zh":"胜利纪念碑","historic":"monument","osm_type":"w","wikidata":"Q2063737","wikipedia":"en:Victory
+        Monument (Thailand)"}},"place_id":"51cfd7af447322594059a23493eba4872b40f00102f9010bb76d090000000092033ce0b8ade0b899e0b8b8e0b8aae0b8b2e0b8a7e0b8a3e0b8b5e0b8a2e0b98ce0b88ae0b8b1e0b8a2e0b8aae0b8a1e0b8a3e0b8a0e0b8b9e0b8a1e0b8b4"},"geometry":{"type":"Point","coordinates":[100.53828541919869,13.764930116385873]}},{"type":"Feature","properties":{"name":"อนุสาวรีย์ประชาธิปไตย","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","suburb":"Phra
+        Nakhon District","quarter":"Bowon Niwet Subdistrict","street":"Ratchadamnoen
+        Klang Road","lon":100.50184146533668,"lat":13.75666575,"formatted":"Democracy
+        Monument, Ratchadamnoen Klang Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Democracy
+        Monument","address_line2":"Ratchadamnoen Klang Road, Phra Nakhon District,
+        Bangkok 10200, Thailand","categories":["tourism","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"อนุสาวรีย์ประชาธิปไตย","osm_id":178329973,"name:de":"Demokratiedenkmal","name:en":"Democracy
+        Monument","name:es":"Monumento a la Democracia","name:ko":"민주기념탐","name:th":"อนุสาวรีย์ประชาธิปไตย","name:tr":"Demokrasi
+        Anıtı","historic":"monument","osm_type":"w","wikidata":"Q1186076","wikipedia":"th:อนุสาวรีย์ประชาธิปไตย"}},"place_id":"51d352972b1e205940595050c46f6c832b40f00102f9017519a10a0000000092033fe0b8ade0b899e0b8b8e0b8aae0b8b2e0b8a7e0b8a3e0b8b5e0b8a2e0b98ce0b89be0b8a3e0b8b0e0b88ae0b8b2e0b898e0b8b4e0b89be0b984e0b895e0b8a2"},"geometry":{"type":"Point","coordinates":[100.50184144761742,13.756686680521085]}},{"type":"Feature","properties":{"name":"เสาชิงช้า","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10200","suburb":"Phra
+        Nakhon District","quarter":"Wat Ratchabophit Subdistrict","street":"Bamrung
+        Mueang Road","lon":100.5012694,"lat":13.751808400000002,"formatted":"Giant
+        Swing, Bamrung Mueang Road, Phra Nakhon District, Bangkok 10200, Thailand","address_line1":"Giant
+        Swing","address_line2":"Bamrung Mueang Road, Phra Nakhon District, Bangkok
+        10200, Thailand","categories":["tourism","tourism.attraction","tourism.sights","tourism.sights.memorial","tourism.sights.memorial.monument"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"เสาชิงช้า","osm_id":178353988,"name:en":"Giant
+        Swing","name:es":"Columpio Gigante","name:ru":"Гигантские качели","name:th":"เสาชิงช้า
+        - Wat Suthat","name:tr":"Dev Salıncak","tourism":"attraction","historic":"monument","osm_type":"w","wikidata":"Q1279344","wikipedia":"en:Giant
+        Swing","alt_name:en":"Sao Ching Sa"}},"place_id":"5112df3fcc14205940597dabd307ed802b40f00102f9014477a10a0000000092031be0b980e0b8aae0b8b2e0b88ae0b8b4e0b887e0b88ae0b989e0b8b2"},"geometry":{"type":"Point","coordinates":[100.50126939999998,13.75180839976178]}},{"type":"Feature","properties":{"name":"พระที่นั่งอภิเศกดุสิต","country":"Thailand","country_code":"th","state":"Bangkok","city":"Bangkok","postcode":"10300","suburb":"Dusit
+        District","quarter":"Dusit Subdistrict","street":"U Thong Nai Road","lon":100.51308781134566,"lat":13.773469500000001,"formatted":"Abhisek
+        Dusit Throne Hall, U Thong Nai Road, Dusit District, Bangkok 10300, Thailand","address_line1":"Abhisek
+        Dusit Throne Hall","address_line2":"U Thong Nai Road, Dusit District, Bangkok
+        10300, Thailand","categories":["building","building.historic","tourism","tourism.sights"],"details":["details","details.wiki_and_media"],"datasource":{"sourcename":"openstreetmap","attribution":"©
+        OpenStreetMap contributors","license":"Open Database Licence","url":"https://www.openstreetmap.org/copyright","raw":{"name":"พระที่นั่งอภิเศกดุสิต","layer":1,"osm_id":205707903,"name:en":"Abhisek
+        Dusit Throne Hall","building":"yes","historic":"yes","osm_type":"w","wikidata":"Q7475804","wikipedia":"en:Abhisek
+        Dusit Throne Hall"}},"place_id":"51bbd6af2bd620594059e628ddd6088c2b40f00102f9017fda420c0000000092033fe0b89ee0b8a3e0b8b0e0b897e0b8b5e0b988e0b899e0b8b1e0b988e0b887e0b8ade0b8a0e0b8b4e0b980e0b8a8e0b881e0b894e0b8b8e0b8aae0b8b4e0b895"},"geometry":{"type":"Point","coordinates":[100.51307193919904,13.773504938599626]}}]}'
+  recorded_at: Mon, 06 Mar 2023 18:10:31 GMT
+recorded_with: VCR 6.1.0
