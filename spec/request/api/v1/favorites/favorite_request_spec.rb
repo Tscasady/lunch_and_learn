@@ -45,8 +45,11 @@ RSpec.describe 'The favorite resources request', type: :request do
       user = User.create!(name: 'test', email: 'test@email.com', api_key: 'jgn983hy48thw9begh98h4539h4')
       Favorite.create!(country: 'Brazil', recipe_title: 'food thing', recipe_link: 'recipe.com', user: user)
       Favorite.create!(country: 'Canada', recipe_title: 'good meal', recipe_link: 'recipe.com', user: user)
-      Favorite.create!(country: 'Mexio', recipe_title: 'tasty dinner', recipe_link: 'recipe.com', user: user)
+      Favorite.create!(country: 'Mexico', recipe_title: 'tasty dinner', recipe_link: 'recipe.com', user: user)
       get "/api/v1/favorites?api_key=#{user.api_key}"
+
+      expected_favorite_keys = %i[id type attributes]
+      expected_attribute_keys = %i[recipe_title recipe_link country created_at]
 
       expect(response.status).to be 200
 
@@ -54,19 +57,21 @@ RSpec.describe 'The favorite resources request', type: :request do
 
       expect(favorites).to be_a Array
       expect(favorites.length).to eq 3
+      expect(favorites.first.keys).to eq expected_favorite_keys
+      expect(favorites.first[:attributes].keys).to eq expected_attribute_keys
 
       favorites.each do |favorite|
-        expect(favorite[:id]).to be_a Numeric
-        expect(favorite[:id][:type]).to eq 'favorite'
-        expect(favorite[:id][:attributes]).to be_a Hash
-        expect(favorite[:id][:attributes][:recipe_title]).to be_a String
-        expect(favorite[:id][:attributes][:recipe_link]).to be_a String
-        expect(favorite[:id][:attributes][:country]).to be_a String
-        expect(favorite[:id][:attributes][:created_at]).to be_a String
+        expect(favorite[:id]).to be_a String
+        expect(favorite[:type]).to eq 'favorite'
+        expect(favorite[:attributes]).to be_a Hash
+        expect(favorite[:attributes][:recipe_title]).to be_a String
+        expect(favorite[:attributes][:recipe_link]).to be_a String
+        expect(favorite[:attributes][:country]).to be_a String
+        expect(favorite[:attributes][:created_at]).to be_a String
       end
 
-      expect(favorite.first[:country]).to eq 'Brazil'
-      expect(favorite.last[:country]).to eq 'Mexico'
+      expect(favorites.first[:attributes][:country]).to eq 'Brazil'
+      expect(favorites.last[:attributes][:country]).to eq 'Mexico'
     end
 
     it 'can return an empty array if the user has not favorited any recipes' do
@@ -77,6 +82,15 @@ RSpec.describe 'The favorite resources request', type: :request do
 
       favorites = JSON.parse(response.body, symbolize_names: true)[:data]
       expect(favorites).to eq []
+    end
+
+    it 'can return an error if the api_key does not refer to a user' do
+      User.create!(name: 'test', email: 'test@email.com', api_key: 'jgn983hy48thw9begh98h4539h4')
+      get "/api/v1/favorites?api_key=badkey"
+
+      expect(response.status).to be 404
+      error = JSON.parse(response.body, symbolize_names: true)
+      expect(error[:errors]).to eq "Couldn't find User"
     end
   end
 end
