@@ -4,12 +4,12 @@ RSpec.describe 'The favorite resources request', type: :request do
   describe 'provides a post endpoint for adding a favorite recipe to a user' do
     it 'can create a new favorite recipe for a user' do
       user = User.create!(name: 'test', email: 'test@email.com', api_key: 'jgn983hy48thw9begh98h4539h4')
-      post '/api/v1/favorites', params: { favorite: {
+      post '/api/v1/favorites', params: { 
         "api_key": 'jgn983hy48thw9begh98h4539h4',
         "country": 'thailand',
         "recipe_link": 'https://www.tastingtable.com/',
         "recipe_title": 'Crab Fried Rice (Khaao Pad Bpu)'
-      } }
+       }
 
       expect(response.status).to be 201
       message = JSON.parse(response.body, symbolize_names: true)
