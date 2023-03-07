@@ -1,15 +1,14 @@
 require 'rails_helper'
 
 RSpec.describe 'The learning resources request', type: :request do
-#TODO: Test that some fields are not present
-  describe 'provides the learning resources by country endpoint' do
+  describe 'provides the learning resources by country endpoint', :vcr do
     it 'can return all recipes for a given country' do
       get '/api/v1/learning_resources?country=laos'
       expect(response).to be_successful
 
       learning_resource = JSON.parse(response.body, symbolize_names: true)[:data]
       
-      expect(learning_resource).to be_a hash
+      expect(learning_resource).to be_a Hash
       expect(learning_resource[:id]).to eq nil
       expect(learning_resource[:type]).to eq "learning_resource"
       expect(learning_resource[:attributes]).to be_a Hash
@@ -33,7 +32,7 @@ RSpec.describe 'The learning resources request', type: :request do
     end
 
     it 'can return an empty array for the images field if no images are found' do
-      get '/api/v1/recipes?country=notcountry'
+      get '/api/v1/learning_resources?country=notcountry'
       expect(response).to be_successful
 
       learning_resource = JSON.parse(response.body, symbolize_names: true)[:data]

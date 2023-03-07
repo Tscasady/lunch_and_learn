@@ -1,7 +1,7 @@
-class LearningResourceService
+class LearningResourceVideoService
   BASE_URL = 'https://youtube.googleapis.com'
 
-  def self.search(query)
+  def self.search_videos(query)
     parse(conn.get('/youtube/v3/search') do |req|
       req.params[:q] = query
     end)
