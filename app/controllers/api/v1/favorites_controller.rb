@@ -10,7 +10,6 @@ module Api
       def favorite_params
         params.require(:favorite)
       end
-
     end
   end
 end
