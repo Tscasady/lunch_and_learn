@@ -1,6 +1,11 @@
 module Api
   module V1
     class FavoritesController < ApplicationController
+      def index
+        user = User.find_by!(api_key: params[:api_key])
+        render json: FavoriteSerializer.new(user.favorites)
+      end
+
       def create
         user = User.find_by(api_key: params[:api_key])
         Favorite.create!(favorite_params.merge(user: user))

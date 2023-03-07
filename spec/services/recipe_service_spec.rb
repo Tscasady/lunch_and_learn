@@ -3,7 +3,7 @@ require 'rails_helper'
 RSpec.describe RecipeService do
   describe 'class methods' do
     describe 'recipes' do
-      it 'returns a hash of recipe data' do
+      it 'returns a hash of recipe data', :vcr do
         recipe_data = RecipeService.recipes('Bosnia')
         
         expect(recipe_data).to be_a Hash
