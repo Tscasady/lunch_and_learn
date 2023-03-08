@@ -23,7 +23,7 @@ This project requires Ruby 2.7.4
 ### Environment Variables
 
 The app makes calls to the [Youtube](https://developers.google.com/youtube/v3/docs), [Unsplash](https://unsplash.com/developers), [GeoApify](https://myprojects.geoapify.com/projects), [Edamam](https://developer.edamam.com/edamam-recipe-api), and [RestCountries](https://restcountries.com/#api-endpoints-v3-all) API. 
-You will need to register and aquire your own API keys for all but the RestCountries API to produce any functional endpoints.
+You will need to register and acquire your own API keys for all but the RestCountries API to produce any functional endpoints.
 
 This project includes the Figaro gem in the Gemfile, but any credential tool can work. 
 To use Figaro: 
