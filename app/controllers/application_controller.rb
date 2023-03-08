@@ -9,8 +9,4 @@ class ApplicationController < ActionController::API
   def render_not_found_response(exception)
     render json: { errors: exception.message }, status: :not_found
   end
-  
-  # def render_bad_request(exception)
-  #   render json: ErrorSerializer.new(exception).serialize, status: :bad_request
-  # end
 end
