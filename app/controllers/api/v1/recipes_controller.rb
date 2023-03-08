@@ -2,7 +2,7 @@ module Api
   module V1
     class RecipesController < ApplicationController
       def index
-        recipes = Rails.cache.fetch("search/#{params[:country]}", expires_in: 4.hour) do
+        recipes = Rails.cache.fetch("search/#{country}", expires_in: 4.hour) do
           RecipeFacade.recipes(country)
         end
         render json: RecipeSerializer.new(recipes) 
