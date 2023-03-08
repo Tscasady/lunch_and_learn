@@ -2,12 +2,10 @@ module Api
   module V1
     class RecipesController < ApplicationController
       def index
-        if params[:country] == ''
-          render json: { data: [] }
-        else
-          recipes = RecipeFacade.recipes(country) 
-          render json: RecipeSerializer.new(recipes) 
+        recipes = Rails.cache.fetch("search/#{country}", expires_in: 4.hour) do
+          RecipeFacade.recipes(country)
         end
+        render json: RecipeSerializer.new(recipes) 
       end
 
       private 

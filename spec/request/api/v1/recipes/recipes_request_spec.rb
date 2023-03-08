@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 RSpec.describe 'The recipe request', type: :request do
-#TODO: Test that some fields are not present
   describe 'provides the recipes by country endpoint' do
     it 'can return all recipes for a given country', :vcr do
       get '/api/v1/recipes?country=thailand'
