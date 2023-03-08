@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=AIzaSyAYTFLYk0F5w10IRZiBCRk9Cusxn1tmkCk&part=snippet&q=notcountry&type=video
+    uri: https://youtube.googleapis.com/youtube/v3/search?channelId=UCluQ5yInbeAkkeCndNnUhpw&key=<GOOGLE_API_KEY>&part=snippet&q=notcountry&type=video
     body:
       encoding: US-ASCII
       string: ''
@@ -25,7 +25,7 @@ http_interactions:
       - Referer
       - X-Origin
       Date:
-      - Tue, 07 Mar 2023 02:30:48 GMT
+      - Wed, 08 Mar 2023 00:57:57 GMT
       Server:
       - scaffolding on HTTPServer2
       Cache-Control:
@@ -53,10 +53,10 @@ http_interactions:
           },
           "items": []
         }
-  recorded_at: Tue, 07 Mar 2023 02:30:48 GMT
+  recorded_at: Wed, 08 Mar 2023 00:57:57 GMT
 - request:
     method: get
-    uri: https://api.unsplash.com/search/photos?client_id=OBrbZagCLGel9GS9BMAJTeR9HCnWs5WnTb2ggCBO89s&query=notcountry
+    uri: https://api.unsplash.com/search/photos?client_id=<UNSPLASH_ACCESS_KEY>&query=notcountry
     body:
       encoding: US-ASCII
       string: ''
@@ -105,11 +105,11 @@ http_interactions:
       X-Ratelimit-Limit:
       - '50'
       X-Ratelimit-Remaining:
-      - '49'
+      - '48'
       X-Request-Id:
-      - ede01a6d-e03d-4579-b8a5-2c6f23506f7c
+      - aab074a2-ed28-4c43-8024-988c339fef9f
       X-Runtime:
-      - '0.106394'
+      - '0.054983'
       Strict-Transport-Security:
       - max-age=63072000; includeSubDomains
       Via:
@@ -117,21 +117,21 @@ http_interactions:
       Accept-Ranges:
       - bytes
       Date:
-      - Tue, 07 Mar 2023 02:30:48 GMT
+      - Wed, 08 Mar 2023 00:57:57 GMT
       Age:
-      - '15624'
+      - '0'
       X-Served-By:
-      - cache-iad-kcgs7200138-IAD, cache-msp11852-MSP
+      - cache-iad-kcgs7200138-IAD, cache-msp11846-MSP
       X-Cache:
       - MISS, HIT
       X-Cache-Hits:
       - 0, 1
       X-Timer:
-      - S1678156249.700404,VS0,VE1
+      - S1678237078.625259,VS0,VE1
       Vary:
       - Accept-Encoding, Origin,Authorization,Accept-Language,client-geo-region,Accept
     body:
       encoding: UTF-8
       string: '{"total":0,"total_pages":0,"results":[]}'
-  recorded_at: Tue, 07 Mar 2023 02:30:48 GMT
+  recorded_at: Wed, 08 Mar 2023 00:57:57 GMT
 recorded_with: VCR 6.1.0

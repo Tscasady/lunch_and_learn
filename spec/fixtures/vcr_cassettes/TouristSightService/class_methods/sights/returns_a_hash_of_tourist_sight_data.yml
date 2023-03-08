@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 07 Mar 2023 03:52:25 GMT
+      - Wed, 08 Mar 2023 00:59:30 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -49,13 +49,13 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=TDPzmHMotlykyCckWd0rykexWB6ytaHCRCxzQzw7nzIDso0UY3hrzl4JV4vUOyh%2FcyO4JKJyMxpCdMwr1wg8Y1YnzBbwR6nr8Fq4jxirctd3BuHhl0mEt6Qh48IbKi5jzE4%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=JgbS8SCTN%2FX2%2BRYajLsMjJpxCAg8aMVPMrENnJraDI5vL3nxYaiD2JDzbdrJBqRz41l1lMEwGKmp4Cu4LKl1DynVb1%2B759r5Uf995Up42%2Fy2LMDuonh%2Buq%2FN7xBQEpsHURc%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a3fe2aba83986e6-ORD
+      - 7a4722be8f502c9b-ORD
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
@@ -258,5 +258,5 @@ http_interactions:
         kuća","osm_id":224740343,"name:sr":"Цековића кућа","building":"yes","historic":"building","osm_type":"w","wikidata":"Q19951118","addr:city":"Pale","addr:town":"Istočno
         Sarajevo","wikipedia":"sr:Cekovića kuća","addr:street":"Romanijska","name:sr-Latn":"Cekovića
         kuća","addr:postcode":71420,"building:levels":3,"addr:housenumber":10}},"place_id":"5149a519c4729132405966a42267dee84540f00102f901f743650d0000000092030f43656b6f7669c48761206b75c48761"},"geometry":{"type":"Point","coordinates":[18.568157440434593,43.8192871970321]}}]}'
-  recorded_at: Tue, 07 Mar 2023 03:52:25 GMT
+  recorded_at: Wed, 08 Mar 2023 00:59:30 GMT
 recorded_with: VCR 6.1.0

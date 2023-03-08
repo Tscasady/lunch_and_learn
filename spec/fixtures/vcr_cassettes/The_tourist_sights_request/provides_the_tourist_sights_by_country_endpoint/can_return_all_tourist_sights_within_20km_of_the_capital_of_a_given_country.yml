@@ -19,7 +19,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 07 Mar 2023 03:51:42 GMT
+      - Wed, 08 Mar 2023 00:58:19 GMT
       Server:
       - Apache/2.4.38 (Debian)
       Cache-Control:
@@ -47,7 +47,7 @@ http_interactions:
         Cumhuriyeti","common":"Fransa"},"urd":{"official":"جمہوریہ فرانس","common":"فرانس"},"zho":{"official":"法兰西共和国","common":"法国"}},"latlng":[46.0,2.0],"landlocked":false,"borders":["AND","BEL","DEU","ITA","LUX","MCO","ESP","CHE"],"area":551695.0,"demonyms":{"eng":{"f":"French","m":"French"},"fra":{"f":"Française","m":"Français"}},"flag":"\uD83C\uDDEB\uD83C\uDDF7","maps":{"googleMaps":"https://goo.gl/maps/g7QxxSFsWyTPKuzd7","openStreetMaps":"https://www.openstreetmap.org/relation/1403916"},"population":67391582,"gini":{"2018":32.4},"fifa":"FRA","car":{"signs":["F"],"side":"right"},"timezones":["UTC-10:00","UTC-09:30","UTC-09:00","UTC-08:00","UTC-04:00","UTC-03:00","UTC+01:00","UTC+02:00","UTC+03:00","UTC+04:00","UTC+05:00","UTC+10:00","UTC+11:00","UTC+12:00"],"continents":["Europe"],"flags":{"png":"https://flagcdn.com/w320/fr.png","svg":"https://flagcdn.com/fr.svg","alt":"The
         flag of France is composed of three equal vertical bands of blue, white and
         red."},"coatOfArms":{"png":"https://mainfacts.com/media/images/coats_of_arms/fr.png","svg":"https://mainfacts.com/media/images/coats_of_arms/fr.svg"},"startOfWeek":"monday","capitalInfo":{"latlng":[48.87,2.33]},"postalCode":{"format":"#####","regex":"^(\\d{5})$"}}]'
-  recorded_at: Tue, 07 Mar 2023 03:51:42 GMT
+  recorded_at: Wed, 08 Mar 2023 00:58:19 GMT
 - request:
     method: get
     uri: https://api.geoapify.com/v2/places?apiKey=<apiKey>&categories=tourism.sights&filter=circle:2.33,48.87,20000
@@ -67,7 +67,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 07 Mar 2023 03:52:23 GMT
+      - Wed, 08 Mar 2023 00:59:00 GMT
       Content-Type:
       - application/json; charset=utf-8
       Transfer-Encoding:
@@ -97,17 +97,17 @@ http_interactions:
       Cf-Cache-Status:
       - DYNAMIC
       Report-To:
-      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=bToOCVwkyRRpSZAVvEQC65TveDo%2B5%2FG5M8ez1TmskhdhuMahWBWbwCgAFPNlkyFQwRGxxYMZhxg1PzymSKHR%2F6QniOwC3dhXFCZJ8%2BmEh9i7CGmPV4rfurfe9LXrGiFs3NY%3D"}],"group":"cf-nel","max_age":604800}'
+      - '{"endpoints":[{"url":"https:\/\/a.nel.cloudflare.com\/report\/v3?s=nKjy1Rfx%2FitLU4RR1Ik1H3QmSR%2BYo9TiR77pB9Sigs8q%2B9v0f58wnGq06NziVEI8Mbd99F0SPI%2B0dDwCJZYhZt23DZlqY1DO%2FYikQqFrZpQMtiSw5OtnZKe93EU1r%2F2CaeI%3D"}],"group":"cf-nel","max_age":604800}'
       Nel:
       - '{"success_fraction":0,"report_to":"cf-nel","max_age":604800}'
       Server:
       - cloudflare
       Cf-Ray:
-      - 7a3fe1acde88631e-ORD
+      - 7a4721111e1e811f-ORD
       Alt-Svc:
       - h3=":443"; ma=86400, h3-29=":443"; ma=86400
     body:
       encoding: UTF-8
       string: '{"type":"FeatureCollection","features":[]}'
-  recorded_at: Tue, 07 Mar 2023 03:52:23 GMT
+  recorded_at: Wed, 08 Mar 2023 00:59:00 GMT
 recorded_with: VCR 6.1.0
