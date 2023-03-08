@@ -101,7 +101,11 @@ VCR.configure do |config|
   end
   config.cassette_library_dir = 'spec/fixtures/vcr_cassettes'
   config.hook_into :webmock
-  config.filter_sensitive_data('<apiKey>') { ENV['PLACE_API_KEY'] } #name_api_key from config/application.yml
+  config.filter_sensitive_data('<apiKey>') { ENV['PLACE_API_KEY'] } 
+  config.filter_sensitive_data('<app_key>') { ENV['app_key'] } 
+  config.filter_sensitive_data('<app_id>') { ENV['app_id'] } 
+  config.filter_sensitive_data('<GOOGLE_API_KEY>') { ENV['GOOGLE_API_KEY'] } 
+  config.filter_sensitive_data('<UNSPLASH_ACCESS_KEY>') { ENV['UNSPLASH_ACCESS_KEY'] } 
   config.configure_rspec_metadata!
   config.allow_http_connections_when_no_cassette = true
 end
